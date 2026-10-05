@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - My Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Your details</legend>
+
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="15" max="60">
+
+        <label for="number">Number</label>
+        <input type="number" id="number" name="number" placeholder="Your phone number" required>
+      </fieldset>
+
+       <fieldset class="inline">
+        <legend>What year are you in?</legend>
+        <input type="radio" id="year-1" name="year" value="1" checked>
+        <label for="year-1">First year</label>
+        <input type="radio" id="year-2" name="year" value="2">
+        <label for="year-2">Second year</label>
+        <input type="radio" id="year-3" name="year" value="3">
+        <label for="year-3">Third year</label>
+        <input type="radio" id="year-4" name="year" value="4">
+        <label for="year-4">Fourth year</label>
+      </fieldset>
+
+        <fieldset class="inline">
+        <legend>What are your favourite courses?</legend>
+        <input type="checkbox" id="course-sys" name="courses" value="sys">
+        <label for="course-web">Systems</label>
+        <input type="checkbox" id="course-algo" name="courses" value="algorithms">
+        <label for="course-algo">Algorithms</label>
+        <input type="checkbox" id="course-logic" name="courses" value="logic">
+        <label for="course-sys">Logic</label>
+        <input type="checkbox" id="course-data" name="courses" value="data">
+        <label for="course-data">Database</label>
+      </fieldset>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Blog &ndash; Faculty of Science, Computer Science Department</p>
+  </footer>
+</body>
+</html>
